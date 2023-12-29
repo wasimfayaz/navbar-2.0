@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: coral;
+    background-image: url(river-8286407_1920.png);
+    background-size: 100%;
+    background-position: center;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: rgba(2, 0, 36, 0.151);
+    /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 0.232) 35%, rgba(0, 213, 255, 0.183) 100%); */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar a {
+    padding: 14px 30px;
+    text-align: center;
+    text-decoration: none;
+    color: yellow;
+}
+
+.navbar a:nth-child(1) {
+    background-color: white;
+    color: black;
+}
+
+.navbar a:hover {
+    transition: 0.2s ease;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    background-color: yellow;
+    color: blue;
+
+
+}
+
+.content{
+    display: flex;
+}
+.aside{
+    /* background-color: cyan; */
+    width: 30%;
+    height: auto;
+    /* float: left; */
+}
+.article{
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    /* overflow: scroll; */
+}
+
+@media screen and (max-width:500px) {
+    .container-fluid {
+        height: 168px;
+    }
+
+    .navbar {
+        height: 168px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navbar a {
+        width: 100%;
+        font-size: 12px;
+    }
+}
