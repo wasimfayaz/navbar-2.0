@@ -15,7 +15,7 @@ body{
     top: 0;
     width: 100%;
     height: 100px;
-    background: rgba(2, 0, 36, 0.151);
+    /* background: rgba(2, 0, 36, 0.151); */
     /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 0.232) 35%, rgba(0, 213, 255, 0.183) 100%); */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -35,12 +35,22 @@ body{
     text-align: center;
     text-decoration: none;
     color: yellow;
+    width: 100px;
 }
 
-.navbar a:nth-child(1) {
+#firstbtn{
     background-color: white;
     color: black;
 }
+
+.drop-1{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    height: 46px;
+
+}
+
 
 .navbar a:hover {
     transition: 0.2s ease;
@@ -51,7 +61,30 @@ body{
 
 
 }
+.dropcont{
+    display: none;
+}
+.drop-1:hover .dropcont{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 184px;
+    /* background: rgba(2, 0, 36, 0.151); */
+    border-radius: 5px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+}
+.drop-1 a:hover{
+    color: white;
+    background-color: transparent;
+
+}
+
+#drop-trigger1:hover{
+    color: black;
+    background-color: yellow;
+}
 .content{
     display: flex;
 }
